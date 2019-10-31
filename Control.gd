@@ -3,7 +3,13 @@ class_name DialogueAction
 
 
 #In this line, we are exporting a variable, which will be used as the path for the JSON file inside our project
-export (String, FILE, "*.json*") var dialogue_file_path : String
+export (String, FILE, "*.json*") var dialogue_file_path : String = ("res://dialogue/data/data.json")
+
+onready var dialogo = get_node("/root/Interface/DialoguePlayer")
+
+
+func _process(delta):
+	interact()
 
 #This will play whenever the player triggers the dialogue
 func interact()->void:
@@ -11,8 +17,10 @@ func interact()->void:
 	#This variable will basically store the dialogue in a dictionary. The function load_dialogue will interpret the JSON file as a dictionary
 	var dialogue : Dictionary = load_dialogue(dialogue_file_path)
 	
+	#rint(dialogue["001"])
+	
 	#This line plays the dialogue, and it will wait until the dialogue is complete
-	yield(local_map.play_dialogue(dialogue), "completed")
+	dialogo.play_dialogue(dialogue)
 	#Once the played dialogue is completed, a signal (signalizing that the dialogue is finished) will be emitted 
 	emit_signal("finished")
 	pass

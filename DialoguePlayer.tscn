@@ -6,3 +6,20 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 103.607
+margin_top = 414.426
+margin_right = 905.607
+margin_bottom = 586.426
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+margin_right = 798.0
+margin_bottom = 173.0
+
+[node name="missionText" type="TextEdit" parent="Panel"]
+margin_left = -0.644844
+margin_top = -45.6732
+margin_right = 50.3552
+margin_bottom = -5.67319
+rect_scale = Vector2( 3.08, 1 )
