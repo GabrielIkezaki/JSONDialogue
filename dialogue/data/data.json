@@ -1,4 +1,5 @@
 {
-    "001" : {"missao": "01", "description": "missao teste."},
-    "002" : {"missao": "02", "description": "Outra missao"}
+    "001" : {"missao": "Mission 01", "description": "Let's test your skills. For this experiment, prove that you know the basics\nof how to launch a rocket, and overcome the gravitaional force"},
+    "002" : {"missao": "Mission 02", "description": "This time, you'll be going outside the atmosphere. Using the previous formula,\n launch the rocket to the moon."},
+    "003" : {"missao": "Mission 03", "description": "Now that you've already mastered the basics, go somewhere beyond human comprehension.\n You must find the Creator. Find Him. Find our God"}
 }
